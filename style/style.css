@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  overflow-y: auto;
 }
 
 .container {
@@ -297,4 +298,10 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  .scroll-container {
+    max-height: 80vh; /* Prevents text from going off-screen */
+    overflow-y: auto; /* Enables scrolling if needed */
+  }
+
 }
