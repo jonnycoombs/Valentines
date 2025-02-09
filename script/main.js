@@ -100,12 +100,12 @@ const animationTimeline = () => {
       },
       "+=0.7"
     )
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
+    .from(".idea-1", 1.0, ideaTextTrans)
+    .to(".idea-1", 1.0, ideaTextTransLeave, "+=1.5")
+    .from(".idea-2", 1.0, ideaTextTrans)
+    .to(".idea-2", 1.0, ideaTextTransLeave, "+=1.5")
+    .from(".idea-3", 1.0, ideaTextTrans)
+    .to(".idea-3 strong", 1.0, {
       scale: 1.2,
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
@@ -255,7 +255,7 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1",
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".nine p", 1, ideaTextTrans, 5)
     .to(
       ".last-smile",
       0.5,
