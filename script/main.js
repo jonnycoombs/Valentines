@@ -57,7 +57,7 @@ const animationTimeline = () => {
       },
       "-=1"
     )
-    .from(".three", 0.7, {
+    .from(".three", 1.1, {
       opacity: 0,
       y: 10,
       // scale: 0.7
@@ -255,7 +255,7 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1",
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 5)
+    .staggerFrom(".nine p", 1, ideaTextTrans, 25)
     .to(
       ".last-smile",
       0.5,
