@@ -292,6 +292,11 @@ body {
 
   .wish h5 {
     font-size: 1.4rem;
+    position: relative; /* Ensures it stays in normal flow */
+    max-width: 90%; /* Prevents text from overflowing */
+    text-align: center; /* Centers text */
+    margin: 20px auto; /* Adds spacing to keep it visible */
+    overflow-wrap: break-word; /* Ensures long words wrap */
   }
 
   .nine p {

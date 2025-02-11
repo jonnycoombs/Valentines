@@ -100,10 +100,10 @@ const animationTimeline = () => {
       },
       "+=0.7"
     )
-    .from(".idea-1", 1.0, ideaTextTrans)
-    .to(".idea-1", 1.0, ideaTextTransLeave, "+=1.5")
+    .from(".idea-1", 1.5, ideaTextTrans)
+    .to(".idea-1", 1.5, ideaTextTransLeave, "+=3")
     .from(".idea-2", 1.0, ideaTextTrans)
-    .to(".idea-2", 1.0, ideaTextTransLeave, "+=1.5")
+    .to(".idea-2", 1.5, ideaTextTransLeave, "+=3")
     .from(".idea-3", 1.0, ideaTextTrans)
     .to(".idea-3 strong", 1.0, {
       scale: 1.2,
@@ -238,24 +238,34 @@ const animationTimeline = () => {
       },
       "party"
     )
-    .staggerTo(
-      ".eight svg",
-      1.5,
-      {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4,
-      },
-      0.3
-    )
+      .to(
+          ".wish h5", 1, {
+              opacity:1,
+          }
+      )
+      .to(
+          ".wish h5", 1, {
+              opacity:1,
+          }, "+=60"
+      )
+    // .staggerTo(
+    //   ".eight svg",
+    //   1.5,
+    //   {
+    //     visibility: "visible",
+    //     opacity: 0,
+    //     scale: 80,
+    //     repeat: 1,
+    //     repeatDelay: 1.4,
+    //   },
+    //   0.3
+    // )
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
       zIndex: "-1",
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 60)
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
       0.5,
