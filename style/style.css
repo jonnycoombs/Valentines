@@ -115,6 +115,7 @@ body {
 
 .six {
   position: relative;
+  padding: 20px;
 }
 
 .six img {
@@ -222,7 +223,7 @@ body {
   font-weight: lighter;
   font-size: 2rem;
   margin: 10px 0 0;
-  min-height: 100vh; /* Ensures it takes full screen height */
+  /*min-height: 100vh; !* Ensures it takes full screen height *!*/
   padding-bottom: 100px; /* Adds extra space at bottom */
 }
 
@@ -266,51 +267,65 @@ body {
     width: 90%;
   }
 
-  .four .text-box {
-    width: 90%;
+  @media screen and (max-width: 500px) {
+    .wish h5 {
+      font-size: 1.4rem;
+      max-width: 90%;
+      text-align: center;
+      margin: 20px auto;
+      overflow-wrap: break-word;
+    }
   }
 
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
+    .four .text-box {
+      width: 90%;
+    }
+
+    .text-box .fake-btn {
+      right: 5px;
+      bottom: -38px;
+    }
+
+    .idea-5 span {
+      display: block;
+    }
+
+    .idea-6 span {
+      font-size: 10rem;
+    }
+
+    .six .hat {
+      width: 50px;
+      top: -20px;
+    }
+
+    .wish-hbd {
+      font-size: 2.3em;
+    }
+
+    .wish h5 {
+      font-size: 1.4rem;
+      position: relative; /* Ensures it stays in normal flow */
+      max-width: 90%; /* Prevents text from overflowing */
+      text-align: center; /* Centers text */
+      margin: 20px auto; /* Adds spacing to keep it visible */
+      overflow-wrap: break-word; /* Ensures long words wrap */
+      min-height: 100vh; /* Ensures it takes full screen height */
+      padding-bottom: 100px; /* Adds extra space at bottom */
+    }
+
+    .nine p {
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+
+    .scroll-container {
+      max-height: 80vh; /* Prevents text from going off-screen */
+      overflow-y: auto; /* Enables scrolling if needed */
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
   }
 
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    width: 50px;
-    top: -20px;
-  }
-
-  .wish-hbd {
-    font-size: 2.3em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-    position: relative; /* Ensures it stays in normal flow */
-    max-width: 90%; /* Prevents text from overflowing */
-    text-align: center; /* Centers text */
-    margin: 20px auto; /* Adds spacing to keep it visible */
-    overflow-wrap: break-word; /* Ensures long words wrap */
-    min-height: 100vh; /* Ensures it takes full screen height */
-    padding-bottom: 100px; /* Adds extra space at bottom */
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
-
-  .scroll-container {
-    max-height: 80vh; /* Prevents text from going off-screen */
-    overflow-y: auto; /* Enables scrolling if needed */
-  }
-
-}
